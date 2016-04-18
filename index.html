@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Арканоид</title>
+        <title>Arcanoid</title>
         <link rel="stylesheet" href="arc-vue.css"/>
         <script type="text/javascript" src="arc-vue.js"></script>
         <script type="text/javascript" src="vendor/vue.min.js"></script>
@@ -12,8 +12,8 @@
                 <div class="ball" :style="{width: ballWidth, height: ballHeight, left: ballX, top: ballY}"></div>
                 <div class="board" v-el:board :style="{left: boardPosition, width: boardWidth, height: boardHeight}"></div>
             </div>
-            <button @click="moveLeft" v-show="gameProcess">Левее</button>
-            <button @click="moveRight" v-show="gameProcess">Правее</button>
+            <button @click="moveLeft" v-show="gameProcess">Left</button>
+            <button @click="moveRight" v-show="gameProcess">Right</button>
         </div>
     </body>
 </html>
