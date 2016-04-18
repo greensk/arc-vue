@@ -1,0 +1,24 @@
+.map {
+    display: block;
+    position: relative;
+    border: 1px dotted black;
+}
+.ball {
+    display: block;
+    position: absolute;
+    background-image: url(images/ball.png);
+    
+    transition-property: top,left;
+    transition-duration: 100ms;
+}
+.board {
+    background-color: gray;
+    position: absolute;
+    bottom: 0px;
+    
+    transition-property: left;
+    transition-duration: 100ms;
+}
+.game-over {
+    background-color: #a2a2a2;
+}
