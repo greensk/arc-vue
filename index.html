@@ -8,12 +8,10 @@
     </head>
     <body>
         <div id="game">
-            <div v-el:field class="map" :style="{width: mapWidth, height: mapHeight}">
+            <div v-el:field class="map" :style="{width: mapWidth, height: mapHeight}" @mousemove="move">
                 <div class="ball" :style="{width: ballWidth, height: ballHeight, left: ballX, top: ballY}"></div>
                 <div class="board" v-el:board :style="{left: boardPosition, width: boardWidth, height: boardHeight}"></div>
             </div>
-            <button @click="moveLeft" v-show="gameProcess">Left</button>
-            <button @click="moveRight" v-show="gameProcess">Right</button>
         </div>
     </body>
 </html>

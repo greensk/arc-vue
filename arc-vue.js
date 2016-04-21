@@ -54,14 +54,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }
             },
-            moveLeft: function () {
-                this.boardPosition -= this.boardStep;
+            move: function (e) {
+                this.boardPosition = e.clientX - Math.floor(this.boardWidth / 2);
                 if (this.boardPosition < 0) {
                     this.boardPosition = 0;
                 }
-            },
-            moveRight: function () {
-                this.boardPosition += this.boardStep;
                 if (this.boardPosition + this.boardWidth > this.mapWidth) {
                     this.boardPosition = this.mapWidth - this.boardWidth;
                 }
